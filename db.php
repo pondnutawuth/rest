@@ -29,7 +29,7 @@
         function close(){$this->db->close();}
     }
 
-    $mydb = new db("root","", "person_data",true);
-    $data = $mydb->query("select * from person");
+    $mydb = new db("root","12345678","bikeshopdb",true);
+    $data = $mydb->query("select * from category");
     print_r($data);
 ?>
